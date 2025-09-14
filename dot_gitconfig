@@ -1,0 +1,5 @@
+[user]
+	name = xyny
+	email = git@xyny.anonaddy.me
+[core]
+	autocrlf = input
