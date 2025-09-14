@@ -33,10 +33,10 @@ mkdir ($nu.data-dir | path join "vendor/autoload")
 mise activate nu | save -f ($nu.data-dir | path join "vendor/autoload/mise.nu")
 starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
 
-{ # workaround for mise commands not being available during config.nu execution
-	$env.PATH ++= ["/var/home/e/.local/share/mise/installs/atuin/latest/atuin-x86_64-unknown-linux-musl"]
-	atuin init nu | save -f ($nu.data-dir | path join "vendor/autoload/atuin.nu")
-}
+# workaround for mise commands not being available during config.nu execution
+~/.local/share/mise/installs/atuin/latest/atuin-x86_64-unknown-linux-musl/atuin init nu
+	| save -f ($nu.data-dir | path join "vendor/autoload/atuin.nu")
+
 
 # complete
 let fish_completer = {|spans|
