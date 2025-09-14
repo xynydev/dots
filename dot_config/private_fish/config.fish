@@ -16,9 +16,17 @@ if status is-interactive
     alias zed="flatpak run dev.zed.Zed"
     #alias turtle="flatpak run de.philippun1.turtle"
 
-    alias y="yazi"
+    function y
+    	set tmp (mktemp -t "yazi-cwd.XXXXXX")
+    	yazi $argv --cwd-file="$tmp"
+    	if read -z cwd < "$tmp"; and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
+    		builtin cd -- "$cwd"
+    	end
+    	rm -f -- "$tmp"
+    end
 
     alias cze="chezmoi edit --apply"
+    alias cza="chezmoi add"
 
     zoxide init fish | source    
     mise activate fish | source
