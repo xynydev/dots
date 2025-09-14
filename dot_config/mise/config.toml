@@ -1,0 +1,14 @@
+[tools]
+bat = "latest"
+btop = "latest"
+cheat = "latest"
+eza = "latest"
+fzf = "latest"
+github-cli = "latest"
+jj = "latest"
+node = "latest"
+yazi = "latest"
+zoxide = "latest"
+
+[settings]
+idiomatic_version_file_enable_tools = ["node"]
