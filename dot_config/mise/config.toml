@@ -1,4 +1,5 @@
 [tools]
+atuin = "latest"
 bat = "latest"
 btop = "latest"
 cheat = "latest"
