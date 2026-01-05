@@ -13,6 +13,7 @@ kompose = "latest"
 node = "latest"
 restic = "latest"
 "ubi:docker/compose" = { version = "latest", exe = "compose", rename_exe = "docker-compose" }
+"ubi:ouch-org/ouch" = "latest"
 yazi = "latest"
 zoxide = "latest"
 

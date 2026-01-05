@@ -4,16 +4,9 @@ sort_reverse = true
 linemode = "mtime"
 show_hidden = true
 
-[plugin]
-prepend_previewers = [
-	# Archive previewer
-	{ mime = "application/*zip",            run = "ouch" },
-	{ mime = "application/x-tar",           run = "ouch" },
-	{ mime = "application/x-bzip2",         run = "ouch" },
-	{ mime = "application/x-7z-compressed", run = "ouch" },
-	{ mime = "application/x-rar",           run = "ouch" },
-	{ mime = "application/x-xz",            run = "ouch" },
-]
+[[plugin.prepend_previewers]]
+mime = "application/{*zip,tar,bzip2,7z*,rar,xz,zstd,java-archive}"
+run  = "ouch"
 
 [opener]
 extract = [
@@ -25,9 +18,12 @@ play = [
 codium = [
 	{ run = 'codium "$@"', desc = 'codium', orphan = true, for = "unix" }
 ]
+zed = [
+	{ run = 'flatpak run dev.zed.Zed "$@"', desc = 'zed', orphan = true, for = "unix" }	
+]
 
 [open]
 prepend_rules = [
 	{ name = "*.html", use = [ "open", "edit" ] },
-	{ name = "inode/directory", use = [ "codium" ] },
+	{ mime = "inode/directory", use = [ "zed" ] },
 ]

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Yazi
+GenericName=File Manager
+Exec=/usr/bin/foot -- fish --init-command="y"
+TryExec=/usr/bin/foot
+Terminal=false
+Type=Application
+Icon=system-file-manager
+SingleMainWindow=true
+Comment=A file manager
