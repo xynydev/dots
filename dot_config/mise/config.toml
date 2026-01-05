@@ -11,6 +11,7 @@ github-cli = "latest"
 jj = "latest"
 kompose = "latest"
 node = "latest"
+pnpm = "latest"
 restic = "latest"
 "ubi:docker/compose" = { version = "latest", exe = "compose", rename_exe = "docker-compose" }
 "ubi:ouch-org/ouch" = "latest"
