@@ -2,6 +2,7 @@
 atuin = "latest"
 bat = "latest"
 btop = "latest"
+caddy = "latest"
 cheat = "latest"
 eza = "latest"
 fzf = "latest"
@@ -10,6 +11,8 @@ github-cli = "latest"
 jj = "latest"
 kompose = "latest"
 node = "latest"
+restic = "latest"
+"ubi:docker/compose" = { version = "latest", exe = "compose", rename_exe = "docker-compose" }
 yazi = "latest"
 zoxide = "latest"
 

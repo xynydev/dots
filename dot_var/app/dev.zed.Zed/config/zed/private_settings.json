@@ -7,6 +7,14 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "soft_wrap": "editor_width",
+  "agent": {
+    "default_model": {
+      "provider": "openrouter",
+      "model": "nex-agi/deepseek-v3.1-nex-n1:free"
+    },
+    "model_parameters": []
+  },
   "features": {
     "edit_prediction_provider": "zed"
   },
@@ -47,7 +55,7 @@
   "terminal": {
     "dock": "bottom",
     "shell": {
-      "program": "/usr/libexec/bluebuild/nu/nu"
+      "program": "/usr/bin/fish"
     }
   },
 
