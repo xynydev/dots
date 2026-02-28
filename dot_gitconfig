@@ -1,6 +1,6 @@
 [user]
 	name = xyny
-	email = git@xyny.anonaddy.me
+	email = git@xyny.art
 [core]
 	autocrlf = input
 [filter "lfs"]

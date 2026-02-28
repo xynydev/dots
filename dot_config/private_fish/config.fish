@@ -6,6 +6,8 @@ if test -d /home/linuxbrew/.linuxbrew
 end
 
 if status is-interactive
+    fish_config theme choose "Rosé Pine Auto"
+
     alias wget="wget --hsts-file=\"$XDG_DATA_HOME/wget-hsts\""
     alias ls="eza -l --icons=always"
     alias cat="bat"

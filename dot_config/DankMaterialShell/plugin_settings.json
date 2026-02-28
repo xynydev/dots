@@ -1,0 +1,19 @@
+{
+  "dankBatteryAlerts": {
+    "enabled": true
+  },
+  "dankPomodoroTimer": {
+    "enabled": false
+  },
+  "tailscale": {
+    "enabled": true
+  },
+  "emojiLauncher": {
+    "enabled": true,
+    "noTrigger": false,
+    "trigger": ":"
+  },
+  "dankKDEConnect": {
+    "enabled": false
+  }
+}

@@ -1,0 +1,6 @@
+binds {
+    Alt+space hotkey-overlay-title="App Launcher: Open" { spawn "dms" "ipc" "call" "spotlight" "open"; }
+    Super+space hotkey-overlay-title="App Launcher: Open" { spawn "dms" "ipc" "call" "spotlight" "open"; }
+    Alt+Return hotkey-overlay-title="Open a Terminal" { spawn "foot"; }
+    Alt+Escape { toggle-overview; }
+}

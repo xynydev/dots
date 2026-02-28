@@ -8,5 +8,7 @@ use = "ndtoan96/ouch"
 rev = "cfb9140"
 hash = "b5067143415bd2d46c0dfa57319ddcef"
 
-[flavor]
-deps = []
+[[flavor.deps]]
+use = "Mintass/rose-pine-dawn"
+rev = "d82f54f"
+hash = "eb2346fb43d962ddd2b08961c8d0b741"
