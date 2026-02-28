@@ -27,6 +27,7 @@ if status is-interactive
 
     alias cze="chezmoi edit --apply"
     alias cza="chezmoi add"
+    alias czd="chezmoi cd"
 
     #zoxide init fish | source   
      
